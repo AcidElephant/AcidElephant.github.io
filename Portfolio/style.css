@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Lilita+One&family=Montserrat+Alternates:wght@600;700&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=League+Spartan&family=Onest&family=Open+Sans:wght@500&family=Roboto&family=Ubuntu&family=Varela+Round&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=DM+Sans:opsz@9..40&family=Gabarito&family=Merriweather&family=Noto+Serif&family=Public+Sans&family=Rubik&display=swap");
+html, body {
+ overflow-x: hidden;
+}
+  .fadetop {
+     animation: fadetop 2s ease-in;
+  }
+  .faderight {
+     animation: faderight 2s ease-in;
+  }
+  .reveal {
+    position: relative;
+    opacity: 0;
+  }
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  .active.fade-top {
+    animation: fade-top 1s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-top {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes faderight {
+    0% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadetop {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .overlay-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    }
+  
+  .overlay {
+    transition: .5s ease;
+    opacity: 0;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    vertical-align: text-top;
+  }
+  
+  .overlay-container:hover .overlay-img {
+    opacity: 0.3;
+  }
+  
+  .overlay-container:hover .overlay {
+    opacity: 1;
+  }
+  
+body {
+ background-color: #fff;
+ position: relative;
+}
+section {
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+form small {
+ font-family: "Poppins";
+ font-weight: 400;
+}
+.navbar {
+ border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.logo-text {
+ color: #5D737E !important;
+ font-family: "Lilita One";
+ font-size: 34px;
+}
+.navbar .nav-link {
+ font-family: "Montserrat Alternates";
+}
+.navbar-light .navbar-nav .nav-link.active {
+ color: #ff715b !important;
+}
+
+#home {
+ align-items: center;
+ padding-top: 200px;
+ padding-bottom: 300px;
+ line-height: 32px;
+ font-family: 'ubuntu';
+ font-size: 22px;
+}
+
+.text1 {
+ font-weight: 400;
+ font-size: 24px;
+ faderight
+}
+.text2 {
+ padding-top: 15px;
+ font-weight: 700;
+ font-size: 48px;
+}
+.text3 {
+ padding-bottom: 35px;
+ font-size: 28px;
+ font-weight: 700;
+ color: #ff715b;
+ padding-top: 10px;
+}
+.btn-brand {
+ background-color: #EB9486;
+ color: #F9F8F8;
+ font-family: "open sans";
+ margin-bottom: 10%;
+}
+.btn-brand:hover {
+ background-color: #dd2f14d8;
+ color: #fff;
+}
+.home-img {
+ margin-top: -40px;
+ padding-bottom: -500px;
+ width: 400px;
+}
+
+.skill {
+  font-family:'varela round';
+}
+
+#about {
+ background-color:#ead2ac58;
+ margin-bottom: 100px;
+}
+
+.skills {
+ font-family:'public sans';
+ font-weight: 700;
+ font-size:20px;
+}
+
+.aboutme {
+ font-family:'public sans';
+ font-weight: 700;
+ font-size:20px;
+}
+
+.not-img {
+  
+}
+
+.abouttext{
+ margin-top: 20px;
+ font-family:'league spartan';
+ font-size: large;
+}
+
+#work {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+.workheader {
+  font-family: 'varela round';
+}
+
+.contacts {
+ box-sizing: border-box;
+ box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
+ background-color: #fff;
+ border-radius: 10px;
+ padding:30px;
+ padding-bottom: 0px;
+}
+
+.form-control {
+ background-color:#f0f0f0;
+ border:none;
+}
+.contact-text {
+ font-family:'open sans';
+}
+.contact-header {
+font-family: ubuntu;
+}

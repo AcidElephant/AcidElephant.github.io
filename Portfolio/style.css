@@ -1,6 +1,9 @@
+
+/*Font Imports*/
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Lilita+One&family=Montserrat+Alternates:wght@600;700&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=League+Spartan&family=Onest&family=Open+Sans:wght@500&family=Roboto&family=Ubuntu&family=Varela+Round&family=Young+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin&family=DM+Sans:opsz@9..40&family=Gabarito&family=Merriweather&family=Noto+Serif&family=Public+Sans&family=Rubik&display=swap");
+
 html, body {
  overflow-x: hidden;
 }
@@ -211,10 +214,6 @@ form small {
  font-size:20px;
 }
 
-.not-img {
-  
-}
-
 .abouttext{
  margin-top: 20px;
  font-family:'league spartan';
@@ -249,4 +248,9 @@ form small {
 }
 .contact-header {
 font-family: ubuntu;
+}
+
+/*SpikeNelson Disable Icon*/
+.accordion-button.disabled::after {
+  display: none;
 }
